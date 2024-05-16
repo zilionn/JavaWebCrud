@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px; /* Limita o tamanho máximo */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.title {
+    font-size: 24px;
+    color: #333;
+}
+
+table {
+    width: 100%; /* Tabela ocupa toda a largura do container */
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #666;
+    color: #fff;
+}
+
+input[type="text"], input[type="number"], input[type="date"], select {
+    width: 100%; /* Faz com que os inputs ocupem a célula inteira */
+    padding: 8px;
+    margin: 4px 0;
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* Cor mais vibrante para os botões */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Efeito ao passar o mouse */
+}
+
+.player-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.player-table th, .player-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.player-table th {
+    background-color: #666;
+    color: #fff;
+}
+
+.player-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.player-table tr:hover {
+    background-color: #ddd;
+}
+
+input[type="text"], input[type="date"], input[type="number"] {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+}
+
+label {
+    margin: 10px;
+}
+
+.feedback {
+    margin-top: 20px;  /* Espaço entre a tabela e a mensagem de feedback */
+    width: 100%;       /* Faz com que ocupe a largura total */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+div.feedback h2, div.feedback h3 {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f4f4f4; /* Fundo claro para destaque */
+}
+
+div.feedback h2 { /* Estilo específico para mensagens de erro */
+    color: #FF0000; /* Vermelho para mensagens de erro */
+}
+
+div.feedback h3 { /* Estilo específico para mensagens de sucesso */
+    color: #008000; /* Verde para mensagens positivas */
+}

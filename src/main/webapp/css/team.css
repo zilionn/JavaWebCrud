@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+.team-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.team-table th, .team-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.team-table th {
+    background-color: #666;
+    color: #fff;
+}
+
+.team-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.team-table tr:hover {
+    background-color: #ddd;
+}
+
+button {
+    padding: 8px 16px;
+    margin: 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
